@@ -1,0 +1,100 @@
+*{margin: 0; padding: 0;}
+body{
+    font-size: 16px;
+    letter-spacing: .03em;
+    font-family: 'Roboto', sans-serif;
+}
+a{text-decoration: none; color: inherit;}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.site_contain{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.section_title{
+    margin-bottom: 1em;
+}
+
+.site_structure{
+	&.m1{
+		>li{
+			margin-bottom: 1em;
+		}
+	}
+	&.column{
+		display: flex;
+		>li{
+			margin-right: 1em;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+		&.even{
+			>li{
+				flex: 1;
+			}
+		}
+		&.one_2{
+			>li{
+				&:first-child{
+					flex: 1;
+				}
+				&:last-child{
+					flex: 2;
+				}
+			}
+		}
+		&.one_3{
+			>li{
+				&:first-child{
+					flex: 1;
+				}
+				&:last-child{
+					flex: 3;
+				}
+			}
+		}
+		&.three_1{
+			>li{
+				&:first-child{
+					flex: 3;
+				}
+				&:last-child{
+					flex: 1;
+				}
+			}
+		}
+		
+	}
+}
+
+.order_list{
+    background-color: #ddd;
+    padding: 1em;
+    width: 20em
+    >li{
+        position: relative;
+        margin-bottom: 1em;
+        border: 1px solid #ddd;
+        padding: 1em;
+        background-color: #fff;
+    }
+}
+.remove_btn{
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    cursor: pointer;
+}
+.discount_price{
+    text-decoration: line-through;
+}
